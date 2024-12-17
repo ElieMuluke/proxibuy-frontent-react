@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		--primary: 222.2 47.4% 11.2%;
+		--primary-foreground: 210 40% 98%;
+
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
+
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 222.2 84% 4.9%;
+
+		--radius: 0.5rem;
+	}
+
+	.dark {
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+
+		--primary: 210 40% 98%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
+
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 212.7 26.8% 83.9%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+.leaflet-container {
+	height: 20vh;
+	width: 20wh;
+}
+
+@layer base {
+	* {
+		@apply border-border;
+		padding: 0;
+		margin: 0;
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+.bg-cardTestimonies {
+	background-image: radial-gradient(
+			circle at 19% 90%,
+			rgba(190, 190, 190, 0.04) 0%,
+			rgba(190, 190, 190, 0.04) 17%,
+			transparent 17%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 73% 2%,
+			rgba(78, 78, 78, 0.04) 0%,
+			rgba(78, 78, 78, 0.04) 94%,
+			transparent 94%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 45% 2%,
+			rgba(18, 18, 18, 0.04) 0%,
+			rgba(18, 18, 18, 0.04) 55%,
+			transparent 55%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 76% 60%,
+			rgba(110, 110, 110, 0.04) 0%,
+			rgba(110, 110, 110, 0.04) 34%,
+			transparent 34%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 68% 56%,
+			rgba(246, 246, 246, 0.04) 0%,
+			rgba(246, 246, 246, 0.04) 16%,
+			transparent 16%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 71% 42%,
+			rgba(156, 156, 156, 0.04) 0%,
+			rgba(156, 156, 156, 0.04) 47%,
+			transparent 47%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 46% 82%,
+			rgba(247, 247, 247, 0.04) 0%,
+			rgba(247, 247, 247, 0.04) 39%,
+			transparent 39%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at 50% 47%,
+			rgba(209, 209, 209, 0.04) 0%,
+			rgba(209, 209, 209, 0.04) 45%,
+			transparent 45%,
+			transparent 100%
+		),
+		linear-gradient(338deg, rgb(220, 217, 209), rgba(255, 255, 255, 0.17));
+}
+
+.background-circles {
+	position: relative;
+	overflow: hidden;
+}
+.circle-pink {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	background-color: #fbb6ce;
+	border-radius: 50%;
+	top: 20%;
+	left: -15%;
+	z-index: -1;
+}
+.circle-dark-pink {
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background-color: #fb39a2;
+	border-radius: 50%;
+	top: 60%;
+	right: -25%;
+	z-index: -2;
+}
+.circle-light-pink {
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background-color: #ffd2eb;
+	border-radius: 50%;
+	top: 60%;
+	right: -25%;
+	z-index: -2;
+}
